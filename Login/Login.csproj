@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73208C74-D754-406F-BB3F-724B0C6B47F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminTable.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AgeStatusInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlPanelForm.Designer.cs">
+      <DependentUpon>ControlPanelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DignosisTestSaleInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DignosisTestSaleReturn.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DignosticTestDetail.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiscountAuthorityInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DueCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DueCollectionForm.Designer.cs">
+      <DependentUpon>DueCollectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenderInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="MarketingInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MotherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MotherForm.Designer.cs">
+      <DependentUpon>MotherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGenaret.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGenaretForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportGenaretForm.Designer.cs">
+      <DependentUpon>ReportGenaretForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaleForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaleForm2.Designer.cs">
+      <DependentUpon>SaleForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaleReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaleReportForm.Designer.cs">
+      <DependentUpon>SaleReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANITARIUMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SANITARIUMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SANITARIUMDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SANITARIUMDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SANITARIUMDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SANITARIUMDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SANITARIUMDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SANITARIUMDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SANITARIUMDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SANITARIUMDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SANITARIUMDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SANITARIUMDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SANITARIUMDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SANITARIUMDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SANITARIUMDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SANITARIUMDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SANITARIUMDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SANITARIUMDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SpecimenInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ALL_TEST_NAME_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_Day_Wise_Sale_Summary_2_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_Day_Wise_Sale_Summary_2_Result1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_DAY_WISE_SALE_SUMMARY_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_DAY_WISE_SALE_SUMMARY_Result1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreTest.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubCategoryInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCalcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestCalcelForm.Designer.cs">
+      <DependentUpon>TestCalcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestSaleForm.Designer.cs">
+      <DependentUpon>TestSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypeInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xxxxxxxxxxxxxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xxxxxxxxxxxxxx.Designer.cs">
+      <DependentUpon>xxxxxxxxxxxxxx.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ControlPanelForm.resx">
+      <DependentUpon>ControlPanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DueCollectionForm.resx">
+      <DependentUpon>DueCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotherForm.resx">
+      <DependentUpon>MotherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportGenaretForm.resx">
+      <DependentUpon>ReportGenaretForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleForm2.resx">
+      <DependentUpon>SaleForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleReportForm.resx">
+      <DependentUpon>SaleReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestCalcelForm.resx">
+      <DependentUpon>TestCalcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSaleForm.resx">
+      <DependentUpon>TestSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xxxxxxxxxxxxxx.resx">
+      <DependentUpon>xxxxxxxxxxxxxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SANITARIUMDataSet.xsc">
+      <DependentUpon>SANITARIUMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SANITARIUMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SANITARIUMDataSet.xss">
+      <DependentUpon>SANITARIUMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet1.xsc">
+      <DependentUpon>SANITARIUMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SANITARIUMDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SANITARIUMDataSet1.xss">
+      <DependentUpon>SANITARIUMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet2.xsc">
+      <DependentUpon>SANITARIUMDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SANITARIUMDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SANITARIUMDataSet2.xss">
+      <DependentUpon>SANITARIUMDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet3.xsc">
+      <DependentUpon>SANITARIUMDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SANITARIUMDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SANITARIUMDataSet3.xss">
+      <DependentUpon>SANITARIUMDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet4.xsc">
+      <DependentUpon>SANITARIUMDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SANITARIUMDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SANITARIUMDataSet4.xss">
+      <DependentUpon>SANITARIUMDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet5.xsc">
+      <DependentUpon>SANITARIUMDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SANITARIUMDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SANITARIUMDataSet5.xss">
+      <DependentUpon>SANITARIUMDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet6.xsc">
+      <DependentUpon>SANITARIUMDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SANITARIUMDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SANITARIUMDataSet6.xss">
+      <DependentUpon>SANITARIUMDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet7.xsc">
+      <DependentUpon>SANITARIUMDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SANITARIUMDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SANITARIUMDataSet7.xss">
+      <DependentUpon>SANITARIUMDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet8.xsc">
+      <DependentUpon>SANITARIUMDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="SANITARIUMDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SANITARIUMDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SANITARIUMDataSet8.xss">
+      <DependentUpon>SANITARIUMDataSet8.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

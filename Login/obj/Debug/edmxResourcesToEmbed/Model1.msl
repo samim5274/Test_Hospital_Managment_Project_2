@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SANITARIUMModelStoreContainer" CdmEntityContainer="SANITARIUMEntities">
+    <FunctionImportMapping FunctionImportName="SP_ALL_TEST_NAME" FunctionName="SANITARIUMModel.Store.SP_ALL_TEST_NAME">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SANITARIUMModel.SP_ALL_TEST_NAME_Result">
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="SpecimenName" ColumnName="SpecimenName" />
+          <ScalarProperty Name="TestCost" ColumnName="TestCost" />
+          <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="SANITARIUMModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="SANITARIUMModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="SANITARIUMModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="SANITARIUMModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SANITARIUMModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="SANITARIUMModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SANITARIUMModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="SANITARIUMModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="SANITARIUMModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="SP_DAY_WISE_SALE_SUMMARY" FunctionName="SANITARIUMModel.Store.SP_DAY_WISE_SALE_SUMMARY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SANITARIUMModel.SP_DAY_WISE_SALE_SUMMARY_Result1">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="AgeStatus" ColumnName="AgeStatus" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="D_Name" ColumnName="D_Name" />
+          <ScalarProperty Name="R_Name" ColumnName="R_Name" />
+          <ScalarProperty Name="Da_Name" ColumnName="Da_Name" />
+          <ScalarProperty Name="Total_Cost" ColumnName="Total_Cost" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Due" ColumnName="Due" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="BillOfficer" ColumnName="BillOfficer" />
+          <ScalarProperty Name="DueCollection" ColumnName="DueCollection" />
+          <ScalarProperty Name="DueCollectionOfficer" ColumnName="DueCollectionOfficer" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Day_Wise_Sale_Summary_2" FunctionName="SANITARIUMModel.Store.SP_Day_Wise_Sale_Summary_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SANITARIUMModel.SP_Day_Wise_Sale_Summary_2_Result1">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="AgeStatus" ColumnName="AgeStatus" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="D_Name" ColumnName="D_Name" />
+          <ScalarProperty Name="R_Name" ColumnName="R_Name" />
+          <ScalarProperty Name="Da_Name" ColumnName="Da_Name" />
+          <ScalarProperty Name="Total_Cost" ColumnName="Total_Cost" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Due" ColumnName="Due" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="BillOfficer" ColumnName="BillOfficer" />
+          <ScalarProperty Name="DueCollection" ColumnName="DueCollection" />
+          <ScalarProperty Name="DueCollectionOfficer" ColumnName="DueCollectionOfficer" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="AdminTables">
+      <EntityTypeMapping TypeName="SANITARIUMModel.AdminTable">
+        <MappingFragment StoreEntitySet="AdminTable">
+          <ScalarProperty Name="PassAdmin" ColumnName="PassAdmin" />
+          <ScalarProperty Name="UserAdmin" ColumnName="UserAdmin" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgeStatusInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.AgeStatusInfo">
+        <MappingFragment StoreEntitySet="AgeStatusInfo">
+          <ScalarProperty Name="AgeStatus" ColumnName="AgeStatus" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.CategoryInfo">
+        <MappingFragment StoreEntitySet="CategoryInfo">
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepartmentInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.DepartmentInfo">
+        <MappingFragment StoreEntitySet="DepartmentInfo">
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DignosisTestSaleInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.DignosisTestSaleInfo">
+        <MappingFragment StoreEntitySet="DignosisTestSaleInfo">
+          <ScalarProperty Name="ReturnStatus" ColumnName="ReturnStatus" />
+          <ScalarProperty Name="DueStatus" ColumnName="DueStatus" />
+          <ScalarProperty Name="DueCollectionDate" ColumnName="DueCollectionDate" />
+          <ScalarProperty Name="DueCollectionOfficer" ColumnName="DueCollectionOfficer" />
+          <ScalarProperty Name="DueDiscount" ColumnName="DueDiscount" />
+          <ScalarProperty Name="DueCollection" ColumnName="DueCollection" />
+          <ScalarProperty Name="T_Reg" ColumnName="T_Reg" />
+          <ScalarProperty Name="BillOfficer" ColumnName="BillOfficer" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Due" ColumnName="Due" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Total_Cost" ColumnName="Total_Cost" />
+          <ScalarProperty Name="DiscountAuthorityId" ColumnName="DiscountAuthorityId" />
+          <ScalarProperty Name="ReferId" ColumnName="ReferId" />
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="AgeStatusId" ColumnName="AgeStatusId" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DignosisTestSaleReturns">
+      <EntityTypeMapping TypeName="SANITARIUMModel.DignosisTestSaleReturn">
+        <MappingFragment StoreEntitySet="DignosisTestSaleReturn">
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="ReturnAmount" ColumnName="ReturnAmount" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Due" ColumnName="Due" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="TestReturnOfficer" ColumnName="TestReturnOfficer" />
+          <ScalarProperty Name="T_Reg" ColumnName="T_Reg" />
+          <ScalarProperty Name="DignosticId" ColumnName="DignosticId" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DignosticTestDetails">
+      <EntityTypeMapping TypeName="SANITARIUMModel.DignosticTestDetail">
+        <MappingFragment StoreEntitySet="DignosticTestDetail">
+          <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
+          <ScalarProperty Name="TestCost" ColumnName="TestCost" />
+          <ScalarProperty Name="SpecimenId" ColumnName="SpecimenId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DiscountAuthorityInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.DiscountAuthorityInfo">
+        <MappingFragment StoreEntitySet="DiscountAuthorityInfo">
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Da_Name" ColumnName="Da_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DoctorInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.DoctorInfo">
+        <MappingFragment StoreEntitySet="DoctorInfo">
+          <ScalarProperty Name="Fee" ColumnName="Fee" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Degree" ColumnName="Degree" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="D_Name" ColumnName="D_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GenderInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.GenderInfo">
+        <MappingFragment StoreEntitySet="GenderInfo">
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.GroupInfo">
+        <MappingFragment StoreEntitySet="GroupInfo">
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MarketingInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.MarketingInfo">
+        <MappingFragment StoreEntitySet="MarketingInfo">
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.ReferInfo">
+        <MappingFragment StoreEntitySet="ReferInfo">
+          <ScalarProperty Name="MarketingOfficerId" ColumnName="MarketingOfficerId" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="R_Name" ColumnName="R_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportGenarets">
+      <EntityTypeMapping TypeName="SANITARIUMModel.ReportGenaret">
+        <MappingFragment StoreEntitySet="ReportGenaret">
+          <ScalarProperty Name="ReferenceValue" ColumnName="ReferenceValue" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecimenInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.SpecimenInfo">
+        <MappingFragment StoreEntitySet="SpecimenInfo">
+          <ScalarProperty Name="SpecimenName" ColumnName="SpecimenName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreTests">
+      <EntityTypeMapping TypeName="SANITARIUMModel.StoreTest">
+        <MappingFragment StoreEntitySet="StoreTest">
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="S_RegNumber" ColumnName="S_RegNumber" />
+          <ScalarProperty Name="S_TestPrice" ColumnName="S_TestPrice" />
+          <ScalarProperty Name="S_TestName" ColumnName="S_TestName" />
+          <ScalarProperty Name="S_Id" ColumnName="S_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubCategoryInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.SubCategoryInfo">
+        <MappingFragment StoreEntitySet="SubCategoryInfo">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SANITARIUMModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.TypeInfo">
+        <MappingFragment StoreEntitySet="TypeInfo">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="Services" ColumnName="Services" />
+          <ScalarProperty Name="Profail" ColumnName="Profail" />
+          <ScalarProperty Name="Permission" ColumnName="Permission" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FastName" ColumnName="FastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
