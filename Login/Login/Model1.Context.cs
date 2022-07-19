@@ -44,7 +44,6 @@ namespace Login
         public virtual DbSet<SpecimenInfo> SpecimenInfoes { get; set; }
         public virtual DbSet<StoreTest> StoreTests { get; set; }
         public virtual DbSet<SubCategoryInfo> SubCategoryInfoes { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TypeInfo> TypeInfoes { get; set; }
         public virtual DbSet<UserInfo> UserInfoes { get; set; }
     

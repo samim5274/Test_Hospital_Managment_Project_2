@@ -230,9 +230,6 @@
     <Compile Include="SubCategoryInfo.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="TestCalcelForm.cs">
       <SubType>Form</SubType>
     </Compile>

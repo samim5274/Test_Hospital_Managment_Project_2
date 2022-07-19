@@ -78,6 +78,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbxTestName = new System.Windows.Forms.ComboBox();
+            this.txtFillTestId = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtDue = new System.Windows.Forms.TextBox();
@@ -115,7 +117,6 @@
             this.lblRegTotal = new System.Windows.Forms.Label();
             this.lblDueStatus = new System.Windows.Forms.Label();
             this.lblReturnStatus = new System.Windows.Forms.Label();
-            this.txtFillTestId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.storeTestBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sANITARIUMDataSet2)).BeginInit();
@@ -151,9 +152,9 @@
             // txtTestname
             // 
             this.txtTestname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTestname.Location = new System.Drawing.Point(185, 29);
+            this.txtTestname.Location = new System.Drawing.Point(185, 28);
             this.txtTestname.Name = "txtTestname";
-            this.txtTestname.Size = new System.Drawing.Size(427, 30);
+            this.txtTestname.Size = new System.Drawing.Size(124, 30);
             this.txtTestname.TabIndex = 2;
             this.txtTestname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
@@ -230,7 +231,7 @@
             // 
             this.txtFillPrice.Enabled = false;
             this.txtFillPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFillPrice.Location = new System.Drawing.Point(906, 29);
+            this.txtFillPrice.Location = new System.Drawing.Point(906, 28);
             this.txtFillPrice.Name = "txtFillPrice";
             this.txtFillPrice.Size = new System.Drawing.Size(133, 30);
             this.txtFillPrice.TabIndex = 4;
@@ -239,7 +240,7 @@
             // 
             this.txtFillTestName.Enabled = false;
             this.txtFillTestName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFillTestName.Location = new System.Drawing.Point(769, 29);
+            this.txtFillTestName.Location = new System.Drawing.Point(769, 28);
             this.txtFillTestName.Name = "txtFillTestName";
             this.txtFillTestName.Size = new System.Drawing.Size(121, 30);
             this.txtFillTestName.TabIndex = 5;
@@ -599,7 +600,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 32);
+            this.label1.Location = new System.Drawing.Point(34, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 25);
             this.label1.TabIndex = 35;
@@ -608,6 +609,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.groupBox3.Controls.Add(this.cbxTestName);
             this.groupBox3.Controls.Add(this.txtFillTestId);
             this.groupBox3.Controls.Add(this.dgvStore);
             this.groupBox3.Controls.Add(this.label1);
@@ -622,6 +624,25 @@
             this.groupBox3.TabIndex = 36;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Test Detail";
+            // 
+            // cbxTestName
+            // 
+            this.cbxTestName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbxTestName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbxTestName.FormattingEnabled = true;
+            this.cbxTestName.Location = new System.Drawing.Point(315, 28);
+            this.cbxTestName.Name = "cbxTestName";
+            this.cbxTestName.Size = new System.Drawing.Size(315, 30);
+            this.cbxTestName.TabIndex = 37;
+            // 
+            // txtFillTestId
+            // 
+            this.txtFillTestId.Enabled = false;
+            this.txtFillTestId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFillTestId.Location = new System.Drawing.Point(636, 28);
+            this.txtFillTestId.Name = "txtFillTestId";
+            this.txtFillTestId.Size = new System.Drawing.Size(121, 30);
+            this.txtFillTestId.TabIndex = 36;
             // 
             // groupBox5
             // 
@@ -1044,15 +1065,6 @@
             this.lblReturnStatus.Text = "0";
             this.lblReturnStatus.Visible = false;
             // 
-            // txtFillTestId
-            // 
-            this.txtFillTestId.Enabled = false;
-            this.txtFillTestId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFillTestId.Location = new System.Drawing.Point(636, 29);
-            this.txtFillTestId.Name = "txtFillTestId";
-            this.txtFillTestId.Size = new System.Drawing.Size(121, 30);
-            this.txtFillTestId.TabIndex = 36;
-            // 
             // SaleForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1200,5 +1212,6 @@
         private System.Windows.Forms.Label lblDueStatus;
         private System.Windows.Forms.Label lblReturnStatus;
         private System.Windows.Forms.TextBox txtFillTestId;
+        private System.Windows.Forms.ComboBox cbxTestName;
     }
 }

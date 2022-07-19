@@ -85,14 +85,15 @@ namespace Login
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            
+            try
+            { 
                 var db = new SANITARIUMEntities();
                 var tb = new DignosisTestSaleInfo();
                 var tb2 = new StoreTest();
                 var tb3 = new ReportGenaret();
 
-                var PT = db.DignosisTestSaleInfoes.Where(x=>x.Id.ToString() == txtSearch.Text).FirstOrDefault();
-
+                var PT = db.DignosisTestSaleInfoes.Where(x=>x.Id.ToString() == txtSearch.Text && x.ReturnStatus.ToString() == lbltestReturnStatus.Text).FirstOrDefault();          
+            
                 txtName.Text = PT.Name;
                 txtAddress.Text = PT.Address;
                 txtPhone.Text = PT.Phone.ToString();
@@ -102,11 +103,11 @@ namespace Login
             
                 dgvReport.DataSource = db.ReportGenarets.Where(x => x.TestId.ToString() == txtTestId.Text).ToList();
 
-            
-            //catch(Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void dgvTest_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)

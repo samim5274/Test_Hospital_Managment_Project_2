@@ -41,9 +41,19 @@ namespace Login
             FillDoctor();
             FillRefer();
             ClearText2();
+            FillTestName();
 
             //if (MessageBox.Show("Are you sure to delete ..?", "Doctor Manage", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
 
+        }
+
+        private void FillTestName()
+        {
+            var obj = new Manager();
+            var list = obj.GetTestName();
+            cbxTestName.DisplayMember = "TestName";
+            cbxTestName.ValueMember = "Id";
+            cbxTestName.DataSource = list;
         }
 
         private void LoadUserReg()
@@ -79,6 +89,8 @@ namespace Login
                         txtFillTestName.Text = selector.TestName;
                         txtFillPrice.Text = selector.TestCost.ToString();
                         txtFillTestId.Text = selector.Id.ToString();
+
+                        
 
                         TestStore();
                         FillGrid();
@@ -127,6 +139,7 @@ namespace Login
             ts.S_TestPrice = Convert.ToInt32(txtFillPrice.Text);
             ts.S_RegNumber = Convert.ToInt32(lblReg.Text);
             ts.TestId = Convert.ToInt32(txtFillTestId.Text.Trim());
+            ts.PId = Convert.ToInt32(lblTotalReg.Text.Trim());
             db.StoreTests.Add(ts);
             db.SaveChanges();
         }
@@ -909,6 +922,7 @@ namespace Login
 
             this.Controls.Add(ppc);
         }
+
         
     }
 }

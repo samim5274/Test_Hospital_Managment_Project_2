@@ -57,7 +57,6 @@
     <EntitySet Name="SpecimenInfoes" EntityType="SANITARIUMModel.SpecimenInfo" />
     <EntitySet Name="StoreTests" EntityType="SANITARIUMModel.StoreTest" />
     <EntitySet Name="SubCategoryInfoes" EntityType="SANITARIUMModel.SubCategoryInfo" />
-    <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.sysdiagram" />
     <EntitySet Name="TypeInfoes" EntityType="SANITARIUMModel.TypeInfo" />
     <EntitySet Name="UserInfoes" EntityType="SANITARIUMModel.UserInfo" />
     <AssociationSet Name="FK_DignosisTestSaleInfo_AgeStatusInfo" Association="SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo">
@@ -446,6 +445,7 @@
     <Property Name="S_TestPrice" Type="Int32" />
     <Property Name="S_RegNumber" Type="Int32" />
     <Property Name="TestId" Type="Int32" />
+    <Property Name="PId" Type="Int32" />
   </EntityType>
   <EntityType Name="SubCategoryInfo">
     <Key>
@@ -456,16 +456,6 @@
     <Property Name="CategoryId" Type="Int32" />
     <NavigationProperty Name="CategoryInfo" Relationship="SANITARIUMModel.FK_SubCategoryInfo_CategoryInfo" FromRole="SubCategoryInfo" ToRole="CategoryInfo" />
     <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SubCategoryInfo" FromRole="SubCategoryInfo" ToRole="DignosticTestDetail" />
-  </EntityType>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="TypeInfo">
     <Key>

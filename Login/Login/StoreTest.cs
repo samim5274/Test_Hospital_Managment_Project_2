@@ -12,12 +12,13 @@ namespace Login
     using System;
     using System.Collections.Generic;
     
-    public partial class sysdiagram
+    public partial class StoreTest
     {
-        public string name { get; set; }
-        public int principal_id { get; set; }
-        public int diagram_id { get; set; }
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        public int S_Id { get; set; }
+        public string S_TestName { get; set; }
+        public Nullable<int> S_TestPrice { get; set; }
+        public Nullable<int> S_RegNumber { get; set; }
+        public Nullable<int> TestId { get; set; }
+        public Nullable<int> PId { get; set; }
     }
 }
