@@ -56,7 +56,7 @@ namespace Login
 
         private void label7_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
